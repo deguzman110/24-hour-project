@@ -130,3 +130,33 @@ nav ul, nav li {
 #hero {
   width: 100%;
 }
+
+/* synopsis section */
+#synopsis {
+  display: grid;
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 5vw;
+  grid-template-columns: 4fr 8fr;
+  grid-template-areas:
+  "movie-poster" "text-content";
+  margin: 0 auto;
+  padding: 5vh 0;
+}
+
+#synopsis img {
+  grid-area: "movie-poster";
+  float: left;
+  max-width: 30vw;
+}
+
+.text-content {
+  grid-area: "text-content";
+}
+
+.text-content h3 {
+  padding-bottom: 1rem;
+}
+
+.text-content p {
+  padding-bottom: 3rem;
+}
