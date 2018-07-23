@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+/*** rem scaling ***/
+html {
+  font-size: 14px;
+}
+
+/* tablet & mobile sizing */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* 4k+ resolution scaling */
+@media screen and (min-width: 2160px) {
+  html body {
+    margin: 0 auto;
+    width: 1260px;
+  }
+}
+
+/*** container ***/
+.container {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+/*** typography ***/
+h1, h2, h3, h4, h5, h6, ul, li, p, a {
+  font-family: "Abel", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C51F25;
+}
+
+a:active {
+  color: #ACB7C2;
+}
+
+a:visited {
+  color: #192531;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  color: #C51F25;
+  font-size: 2.75rem;
+}
+
+h4 {
+  color: #C51F25;
+  font-size: 2rem;
+}
+
+h5 {
+  color: #192531;
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+ul, li {
+  font-size: 1.25rem;
+}
+
+/*** structure ***/
+header {
+  display: inline-block;
+}
+
+/* nav */
+nav {
+  background-color: #C51F25;
+  height: 7vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#logo {
+  background-color: #fff;
+  float: left;
+  height: 7vh;
+  margin: 0 auto;
+}
+
+nav ul, nav li {
+  display: inline-block;
+  margin: 0.75rem auto;
+}
+
+#links {
+  float: left;
+  padding: 0 5rem;
+  text-align: center;
+  word-spacing: 10rem;
+}
+
+#socials {
+  float: right;
+  padding: 0 5rem;
+  text-align: center;
+  word-spacing: 2.5rem;
+}
+
+/* hero image */
+#hero {
+  width: 100%;
+}

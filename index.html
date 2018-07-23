@@ -8,33 +8,34 @@
   <link rel="shortcut icon" type="image/png" href="images/favico.png">
 
   <!-- Stylesheets -->
-  <!-- <link rel="stylesheet" type="text/css" href="styles/reset.css">
-  <link rel="stylesheet" type="text/css" href="styles/style.css"> -->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <header>
-    <!-- Input Mission Impossible: Fallout logo or text on top-left, and Social Media in nav menu -->
-      <nav>
-        <img src="images/logo.png">
-        <ul>
-          <li>Synopsis</li>
-          <li>Characters</li>
-          <li>Videos</li>
-          <li>Tickets</li>
-        </ul>
-        <ul>
-          <!-- svg icons to go here -->
-          <li>Instagram</li>
-          <li>Facebook</li>
-          <li>Twitter</li>
-        </ul>
-      </nav>
-    <img src="images/hero-image.jpg">
-    </header>
+  <header>
+  <!-- Input Mission Impossible: Fallout logo or text on top-left, and Social Media in nav menu -->
+    <nav>
+      <img id="logo" src="images/logo.png">
+      <ul id="links">
+        <li>Synopsis</li>
+        <li>Characters</li>
+        <li>Videos</li>
+        <li>Tickets</li>
+      </ul>
+      <ul id="socials">
+        <!-- svg icons to go here -->
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+      </ul>
+    </nav>
+  <img id="hero" src="images/hero-image.jpg">
+  </header>
 
-    <main>
+  <main>
+    <div class="container">
       <!-- Content: Synopsis, Director, Cast -->
       <img src="images/movie-poster.jpg">
       <div class="text-content">
@@ -123,8 +124,8 @@
 
       <div class="video-carousel">
         <!-- Content: Trailers (2), Behind the Scenes (1) -->
-      </div>
-    </main>
+    </div>
+  </main>
 
     <footer>
       <!-- Content: Studio information, copyright, etc. -->
