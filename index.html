@@ -39,9 +39,9 @@
     <div class="container">
       <!-- Content: Synopsis, Director, Cast -->
       <section id="synopsis">
-        <img src="images/movie-poster.jpg">
+        <img id="movie-poster" src="images/movie-poster.jpg">
         <div class="text-content">
-          <h3>Synopsis</h3>
+          <h3>SYNOPSIS</h3>
           <p>The best intentions often come back to haunt you. MISSION: IMPOSSIBLE - FALLOUT finds Ethan Hunt (Tom Cruise) and his IMF team (Alec Baldwin, Simon Pegg, Ving Rhames) along with some familiar allies (Rebecca Ferguson, Michelle Monaghan) in a race against time after a mission gone wrong. Henry Cavill, Angela Bassett, and Vanessa Kirby also join the dynamic case with filmmaker Christopher McQuarrie returning to the helm.</p>
 
           <h3>DIRECTED BY</h3>
@@ -52,7 +52,7 @@
         </section>
       </div>
 
-      <section class="characters">
+      <section id="characters">
       <div id="characterCarousel" class="carousel slide" data-ride="carousel">
         <h3>CHARACTERS</h3>
 
@@ -168,16 +168,56 @@
     </section>
 
       <!-- End Carousel Configuration -->
-      <div id="videos" class="video-player">
+      <!-- <div id="videos" class="video-player">
         <h3>VIDEOS</h3>
-        <iframe width="800" height="600" src="https://www.youtube.com/embed/wb49-oV0F78">
+        <iframe width="100%" height="600" src="https://www.youtube.com/embed/wb49-oV0F78">
         </iframe>
-      </div>
+      </div> -->
 
-      <div class="video-carousel">
-        <!-- Content: Trailers (2), Behind the Scenes (1) -->
-    </div>
-  </main>
+    <section id="videos">
+      <!-- Begin Video Carousel Configuration -->
+      <h3>VIDEOS</h3>
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <div id="random_number1" class="carousel slide youtube-carousel" data-ride="carousel" data-interval="false">
+
+            <div class="carousel-inner">
+              <div class="video-container item active">
+                <div class="youtube-video" id='wb49-oV0F78'></div>
+                <div class="carousel-caption video-caption"><h5>Official Trailer</h5></div>
+              </div>
+
+              <div class="video-container item">
+                <div class="youtube-video" id='XiHiW4N7-bo'></div>
+                <div class="carousel-caption video-caption"><h5>Official Trailer II</h5></div>
+              </div>
+
+              <div class="video-container item">
+                <div class="youtube-video" id='2BnOebsDtAQ'></div>
+                <div class="carousel-caption video-caption"><h5>Behind the Scenes: HALO Jump</h5></div>
+              </div>
+            </div>
+
+            <div class="controls">
+              <a class="left carousel-control video-control" href="#random_number1" data-slide="prev">
+                <div class="left-button">
+                  <div class="glyphicon glyphicon-chevron-left"></div>
+                </div>
+              </a>
+              <a class="right carousel-control video-control" href="#random_number1" data-slide="next">
+                <div class="right-button">
+                  <div class="glyphicon glyphicon-chevron-right"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Video Carousel Configuration -->
+    </section>
+
+
+    </main>
 
     <footer>
       <!-- Content: Studio information, copyright, etc. -->

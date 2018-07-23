@@ -61,6 +61,7 @@ h2 {
 h3 {
   color: #C51F25;
   font-size: 2.75rem;
+  margin: 0 auto;
 }
 
 h4 {
@@ -89,6 +90,12 @@ ul, li {
 /*** structure ***/
 header {
   display: inline-block;
+}
+
+#characters, #videos {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 5vh 0;
 }
 
 /* nav */
@@ -164,11 +171,6 @@ nav ul, nav li {
 }
 
 /* Chracters */
-.character-header h3 {
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
 .glyphicon {
   color: #f0f0f0;
 }
@@ -201,4 +203,42 @@ nav ul, nav li {
 
 .carousel-caption p {
   color: #fff;
+}
+
+/* Videos */
+
+.row {
+  padding-top: 3rem;
+}
+
+.youtube-carousel {
+  border: 4px solid #000;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 50%;
+  padding-top: 60px;
+  overflow: hidden;
+  margin-bottom: -1px;
+  margin-right: -1px;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-control {
+  z-index: 1;
+  width: 2vw;
+}
+
+.video-caption h5 {
+  background-color: #C51F25;
+  margin: 0 auto;
+  text-align: center;
 }
