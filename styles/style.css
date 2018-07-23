@@ -28,6 +28,19 @@ html {
   margin: 0 auto;
 }
 
+/* tablet & mobile container */
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90vw;
+  }
+}
+
 /*** typography ***/
 h1, h2, h3, h4, h5, h6, ul, li, p, a {
   font-family: "Abel", sans-serif;
@@ -57,6 +70,7 @@ h3 {
   color: #C51F25;
   font-size: 2.75rem;
   margin: 0 auto;
+  padding-bottom: 1rem;
 }
 
 h4 {
@@ -202,10 +216,6 @@ nav .icon {
   grid-area: text-content;
 }
 
-.text-content h3 {
-  padding-bottom: 1rem;
-}
-
 .text-content p {
   padding-bottom: 3rem;
 }
@@ -229,13 +239,18 @@ nav .icon {
 }
 
 /* Chracters */
+.carousel-inner img {
+  margin: 0 auto;
+  max-width: 100vw;
+}
+
 .glyphicon {
   color: #f0f0f0;
 }
 
 .carousel-indicators {
-  position: relative;
-  top: 500px;
+  position: absolute;
+  top: 67vh;
 }
 
 .carousel-indicators li {
@@ -244,15 +259,24 @@ nav .icon {
 }
 
 .carousel-indicators .active {
-  background-color: #f0f0f0;
+  background-color: #ACB7C2;
 }
 
 .item {
   background-color: #192531;
 }
 
+.char-caption {
+  background-color: rgba(0,0,0,0.75);
+  margin: 0 auto;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .carousel-caption h4, .carousel-caption h5, .carousel-caption p {
-  text-align: right;
+  text-align: center;
 }
 
 .carousel-caption h5 {
@@ -264,8 +288,8 @@ nav .icon {
 }
 
 /* tablet & mobile characters */
-@media screen and (max-width:900px) {
-  #characters {
+@media screen and (max-width:750px) {
+  .carousel-indicators {
     display: none;
   }
 }
