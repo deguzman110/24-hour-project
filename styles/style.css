@@ -127,6 +127,22 @@ nav ul, nav li {
   word-spacing: 2.5rem;
 }
 
+#socials svg:hover {
+  transform: scale(1.25);
+}
+
+#instagram-icon:hover path, #instagram-icon:hover circle {
+  fill: #FFFFFF;
+}
+
+#facebook-icon:hover path {
+  fill: #3B5998;
+}
+
+#twitter-icon:hover path {
+  fill: #1DA1F2;
+}
+
 /* hero image */
 #hero {
   width: 100%;
