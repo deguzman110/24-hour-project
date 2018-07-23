@@ -44,6 +44,9 @@ a:hover {
 
 h1 {
   font-size: 4rem;
+  margin: 0 auto;
+  padding-top: 15vh;
+  text-align: center;
 }
 
 h2 {
@@ -141,6 +144,12 @@ nav ul, nav li {
 
 #twitter-icon:hover path {
   fill: #1DA1F2;
+}
+
+/* countdown timer */
+#countdown {
+  margin: 2rem auto;
+  text-align: center;
 }
 
 /* hero image */
