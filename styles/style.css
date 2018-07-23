@@ -26,7 +26,6 @@ html {
 .container {
   background-color: #fff;
   margin: 0 auto;
-  width: 90vw;
 }
 
 /*** typography ***/
@@ -34,20 +33,13 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a {
   font-family: "Abel", sans-serif;
 }
 
-a {
+a, a:hover, a:visited {
+  color: #fff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #C51F25;
-}
-
-a:active {
-  color: #ACB7C2;
-}
-
-a:visited {
-  color: #192531;
+  color: #000;
 }
 
 h1 {
@@ -92,7 +84,7 @@ header {
   display: inline-block;
 }
 
-#characters, #videos {
+#characters, #videos, #tickets {
   max-width: 90vw;
   margin: 0 auto;
   padding: 5vh 0;
@@ -125,7 +117,7 @@ nav ul, nav li {
   float: left;
   padding: 0 5rem;
   text-align: center;
-  word-spacing: 10rem;
+  word-spacing: 5rem;
 }
 
 #socials {
@@ -241,4 +233,50 @@ nav ul, nav li {
   background-color: #C51F25;
   margin: 0 auto;
   text-align: center;
+}
+
+/* Tickets */
+#tickets {
+  text-align: center;
+}
+
+#tickets p {
+  padding-top: 2rem;
+}
+
+#fandango-logo {
+  display: block;
+  max-width: 25vw;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #C51F25;
+  display: block;
+  margin: 1rem auto;
+  max-width: 22.5vw;
+}
+
+.btn:hover {
+  background-color: #ACB7C2;
+}
+
+footer {
+  background-color: #192531;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+footer a, footer a:hover, footer a:visited {
+  color: #ACB7C2;
+}
+
+footer h6 {
+  color: #fff;
+}
+
+footer img {
+  float: right;
+  max-height: 5vh;
+  margin: 0.5rem 3rem;
 }
