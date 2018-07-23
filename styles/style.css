@@ -94,10 +94,12 @@ header {
 /* nav */
 nav {
   background-color: #C51F25;
+  box-shadow: 2px 2px 5px #777777;
   height: 7vh;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 #logo {
@@ -138,19 +140,19 @@ nav ul, nav li {
   grid-gap: 5vw;
   grid-template-columns: 4fr 8fr;
   grid-template-areas:
-  "movie-poster" "text-content";
+  "movie-poster text-content";
   margin: 0 auto;
   padding: 5vh 0;
 }
 
 #synopsis img {
-  grid-area: "movie-poster";
+  grid-area: movie-poster;
   float: left;
   max-width: 30vw;
 }
 
 .text-content {
-  grid-area: "text-content";
+  grid-area: text-content;
 }
 
 .text-content h3 {
@@ -159,4 +161,44 @@ nav ul, nav li {
 
 .text-content p {
   padding-bottom: 3rem;
+}
+
+/* Chracters */
+.character-header h3 {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.glyphicon {
+  color: #f0f0f0;
+}
+
+.carousel-indicators {
+  position: relative;
+  top: 500px;
+}
+
+.carousel-indicators li {
+  border: 0;
+  background-color: #C51F25
+}
+
+.carousel-indicators .active {
+  background-color: #f0f0f0;
+}
+
+.item {
+  background-color: #192531;
+}
+
+.carousel-caption h4, .carousel-caption h5, .carousel-caption p {
+  text-align: right;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+}
+
+.carousel-caption p {
+  color: #fff;
 }

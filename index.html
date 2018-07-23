@@ -10,6 +10,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="styles/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
@@ -20,8 +21,8 @@
       <img id="logo" src="images/logo.png">
       <ul id="links">
         <li><a href="index.html#synopsis">Synopsis</a></li>
-        <li>Characters</li>
-        <li>Videos</li>
+        <li><a href="index.html#characters">Characters</a></li>
+        <li><a href="index.html#videos">Videos</a></li>
         <li>Tickets</li>
       </ul>
       <ul id="socials">
@@ -51,74 +52,123 @@
         </section>
       </div>
 
-      <div class="character-carousel">
-        <!-- Carousel of images of cast and their character/role in the movie? -->
-        <div id="ethan-hunt">
-          <img src="images/ethan-hunt.jpg">
-          <h4>ETHAN HUNT</h4>
-          <h5>Actor: Tom Cruise</h5>
-          <p>An IMF agent on the run after failing to capture Solomon Lane during a mission.</p>
-        </div>
+      <section class="characters">
+      <div id="characterCarousel" class="carousel slide" data-ride="carousel">
+        <h3>CHARACTERS</h3>
 
-        <div id="august-walker">
-          <img src="images/august-walker.jpg">
-          <h4>AUGUST WALKER</h4>
-          <h5>Actor: Henry Cavill</h5>
-          <p>A CIA assassin working for the Special Activities Division, tasked with eliminating Ethan Hunt and his team.</p>
-        </div>
+        <!-- Carousel Configuration -->
+        <!-- Indicator buttons -->
+        <ol class="carousel-indicators">
+          <li data-target="#characterCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#characterCarousel" data-slide-to="1"></li>
+          <li data-target="#characterCarousel" data-slide-to="2"></li>
+          <li data-target="#characterCarousel" data-slide-to="3"></li>
+          <li data-target="#characterCarousel" data-slide-to="4"></li>
+          <li data-target="#characterCarousel" data-slide-to="5"></li>
+          <li data-target="#characterCarousel" data-slide-to="6"></li>
+          <li data-target="#characterCarousel" data-slide-to="7"></li>
+          <li data-target="#characterCarousel" data-slide-to="8"></li>
+        </ol>
 
-        <div id="luther-stickell">
-          <img src="images/luther-stickell.jpg">
-          <h4>LUTHER STICKELL</h4>
-          <h5>Actor: Ving Rhames</h5>
-          <p>An IMF agent and member of Hunt's team.</p>
-        </div>
+        <!-- wrapper -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/ethan-hunt.jpg" alt="Ethan Hunt">
+            <div class="carousel-caption">
+              <h4>ETHAN HUNT<h4>
+              <h5>Actor: Tom Cruise</h5>
+              <p>An IMF agent on the run after failing to capture Solomon Lane during a mission.</p>
+            </div>
+          </div>
 
-        <div id="benji-dunn">
-          <img src="images/benji-dunn.jpg">
-          <h4>BENJAMIN "BENJI" DUNN</h4>
-          <h5>Actor: Simon Pegg</h5>
-          <p>An IMF technical field agent and member of Hunt's team.</p>
-        </div>
+          <div class="item">
+            <img src="images/august-walker.jpg" alt="August Walker">
+            <div class="carousel-caption">
+              <h4>AUGUST WALKER</h4>
+              <h5>Actor: Henry Cavill</h5>
+              <p>A CIA assassin working for the Special Activities Division.</p>
+            </div>
+          </div>
 
-        <div id="ilsa-faust">
-          <img src="images/ilsa-faust.jpg">
-          <h4>ILSA FAUST</h4>
-          <h5>Actress: Rebecca Ferguson</h5>
-          <p>A former MI6 agent who joined Hunt's team previously.</p>
-        </div>
+          <div class="item">
+            <img src="images/luther-stickell.jpg" alt="Luther Stickell">
+            <div class="carousel-caption">
+              <h4>LUTHER STICKELL</h4>
+              <h5>Actor: Ving Rhames</h5>
+              <p>An IMF agent and member of Hunt's team.</p>
+            </div>
+          </div>
 
-        <div id="solomon-lane">
-          <img src="images/solomon-lane.jpg">
-          <h4>SOLOMON LANE</h4>
-          <h5>Actor: Sean Harris</h5>
-          <p>An anarchist mastermind and the leader of the Syndicate.</p>
-        </div>
+          <div class="item">
+            <img src="images/benji-dunn.jpg" alt="Benji Dunn">
+            <div class="carousel-caption">
+              <h4>BENJI DUNN</h4>
+              <h5>Actor: Simon Pegg</h5>
+              <p>An IMF technical field agent and member of Hunt's team.</p>
+            </div>
+          </div>
 
-        <div id="erica-sloane">
-          <img src="images/erica-sloane.jpg">
-          <h4>ERICA SLOANE</h4>
-          <h5>Actress: Angela Bassett</h5>
-          <p>The new Director of the Central Intelligence Agency (replacing Hunley), and Walker's superior.</p>
-        </div>
+          <div class="item">
+            <img src="images/ilsa-faust.jpg" alt="Ilsa Faust">
+            <div class="carousel-caption">
+              <h4>ILSA FAUST</h4>
+              <h5>Actress: Rebecca Ferguson</h5>
+              <p>A former MI6 agent who joined Hunt's team previously.</p>
+            </div>
+          </div>
 
-        <div id="white-widow">
-          <img src="images/white-widow.jpg">
-          <h4>WHITE WIDOW</h4>
-          <h5>Actress: Vanessa Kirby</h5>
-          <p>A black market arms dealer.</p>
-        </div>
+          <div class="item">
+            <img src="images/solomon-lane.jpg" alt="Solomon Lane">
+            <div class="carousel-caption">
+              <h4>SOLOMON LANE</h4>
+              <h5>Actor: Sean Harris</h5>
+              <p>An anarchist mastermind and the leader of the Syndicate.</p>
+            </div>
+          </div>
 
-        <div id="alan-hunley">
-          <img src="images/alan-hunley.jpg">
-          <h4>ALAN HUNLEY</h4>
-          <h5>Actor: Alec Baldwin</h5>
-          <p>Former CIA Director who is currently the IMF Secretary.</p>
-        </div>
+          <div class="item">
+            <img src="images/erica-sloane.jpg" alt="Erica Sloane">
+            <div class="carousel-caption">
+              <h4>ERICA SLOANE</h4>
+              <h5>Actress: Angela Bassett</h5>
+              <p>The new Director of the Central Intelligence Agency, and Walker's superior.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/white-widow.jpg" alt="White Widow">
+            <div class="carousel-caption">
+              <h4>WHITE WIDOW</h4>
+              <h5>Actress: Vanessa Kirby</h5>
+              <p>A black market arms dealer.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/alan-hunley.jpg" alt="Alan Hunley">
+            <div class="carousel-caption">
+              <h4>ALAN HUNLEY</h4>
+              <h5>Actor: Alec Baldwin</h5>
+              <p>Former CIA Director who is currently the IMF Secretary.</p>
+            </div>
+          </div>
+
+        <!-- controls -->
+        <a class="left carousel-control" href="#characterCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="right carousel-control" href="#characterCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+    </div>
+    </section>
 
-
-      <div class="video-player">
+      <!-- End Carousel Configuration -->
+      <div id="videos" class="video-player">
         <h3>VIDEOS</h3>
         <iframe width="800" height="600" src="https://www.youtube.com/embed/wb49-oV0F78">
         </iframe>
@@ -138,5 +188,8 @@
   </div>
 
   <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/carousel.js"></script>
 </body>
 </html>
