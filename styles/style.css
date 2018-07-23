@@ -130,6 +130,18 @@ nav ul, nav li {
   word-spacing: 2.5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  #links {
+    padding: 0 2rem; {
+    }
+  }
+
+  #socials {
+    padding: 0;
+    padding-right: 1rem;
+  }
+}
+
 #socials svg:hover {
   transform: scale(1.25);
 }
@@ -144,6 +156,17 @@ nav ul, nav li {
 
 #twitter-icon:hover path {
   fill: #1DA1F2;
+}
+
+/* tablet/mobile nav */
+nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  #links {
+    display: none;
+  }
 }
 
 /* countdown timer */
@@ -187,6 +210,24 @@ nav ul, nav li {
   padding-bottom: 3rem;
 }
 
+/* mobile synopsis section */
+@media screen and (max-width: 900px) {
+  #synopsis img {
+    display: none;
+  }
+
+  #synopsis {
+    grid-gap: 5vw;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "movie-poster"
+    "text-content";
+    margin: 0 auto;
+    max-width: 90vw;
+    text-align: center;
+  }
+}
+
 /* Chracters */
 .glyphicon {
   color: #f0f0f0;
@@ -220,6 +261,13 @@ nav ul, nav li {
 
 .carousel-caption p {
   color: #fff;
+}
+
+/* tablet & mobile characters */
+@media screen and (max-width:900px) {
+  #characters {
+    display: none;
+  }
 }
 
 /* Videos */
