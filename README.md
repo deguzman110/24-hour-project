@@ -1,9 +1,9 @@
-24-hour project assignment for Bloc.
+24-hour project assignment.
 
 Design & build a single-page website for a new movie coming to a theater near you.
 
-Movie Chosen
-Mission: Impossible Fallout
+__Movie Chosen-__
+**Mission: Impossible Fallout**
 
 Official Website: https://www.missionimpossible.com
 
